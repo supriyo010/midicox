@@ -1,0 +1,72 @@
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .card-container table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .card-container th, .card-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .card-container th {
+    background-color: #f2f2f2;
+  }
+  
+  .card-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .card-container tr:hover {
+    background-color: #ddd;
+  }
+  
+  /* Patient Buttons */
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button-container .patient-button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .button-container .patient-button:hover::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 8px;
+    border: 2px solid #4CAF50;
+    animation: glowing 1.5s infinite alternate;
+  }
+  
+  @keyframes glowing {
+    0% {
+      box-shadow: 0 0 10px #4CAF50;
+    }
+    100% {
+      box-shadow: 0 0 20px #4CAF50;
+    }
+  }

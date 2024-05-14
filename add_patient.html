@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Patient</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Add New Patient</h1>
+  <form id="patient-form">
+    <table>
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" id="name" name="name" required></td>
+      </tr>
+      <tr>
+        <td><label for="age">Age:</label></td>
+        <td><input type="number" id="age" name="age" required></td>
+      </tr>
+      <tr>
+        <td><label for="blood-group">Blood Group:</label></td>
+        <td><input type="text" id="blood-group" name="blood-group" required></td>
+      </tr>
+      <tr>
+        <td><label for="aadhar-number">Aadhar Number:</label></td>
+        <td><input type="text" id="aadhar-number" name="aadhar-number" required></td>
+      </tr>
+      <tr>
+        <td><label for="ecg-report">ECG Report:</label></td>
+        <td><input type="file" id="ecg-report" name="ecg-report" accept="image/jpeg" required></td>
+      </tr>
+    </table>
+    <button type="submit" id="save-patient-btn">Save</button>
+  </form>
+
+  <script src="scr.js"></script>
+</body>
+</html>
